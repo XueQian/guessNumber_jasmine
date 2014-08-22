@@ -1,11 +1,9 @@
-function Guess() {
-
+function Guess(generateRand,compareNumber) {
+    this.generateRand = generateRand;
+    this.compareNumber = compareNumber;
 }
 Guess.prototype.guess = function (inputs) {
-    var generateRand = new GenerateRand();
-    spyOn(generateRand,"rand").and.returnValue('1234');
-    var answer = generateRand.rand();
 
-    var compareNumber = new CompareNumber();
-    return compareNumber.compare(answer, inputs);
+    var answer = this.generateRand.rand();
+    return this.compareNumber.compare(answer, inputs);
 }

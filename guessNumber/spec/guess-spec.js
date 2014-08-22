@@ -4,12 +4,12 @@ describe('guess', function () {
     });
     it('guess OK', function () {
         var inputs = '1234';
-        var guesses = new Guess();
+        var generateRand = new GenerateRand();
+        spyOn(generateRand,"rand").and.returnValue('4321');
+
+        var compareNumber = new CompareNumber();
+        var guesses = new Guess(generateRand,compareNumber);
         var guessExpect = guesses.guess(inputs);
-//        var generateRand = new GenerateRand();
-//        var answer = generateRand.rand();
-//        var compareNumber = new CompareNumber();
-//        var tips = compareNumber.compare(answer,inputs);
-        expect(guessExpect).toBe("4A0B");
+        expect(guessExpect).toBe("0A4B");
     });
 })
