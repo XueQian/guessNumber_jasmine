@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>!!Game!!</title>
+
+    <!--<script type="text/javascript" src="lib/lodash-2.4.1/lodash.js"></script>-->
+    <!--<script type="text/javascript" src="lib/lodash-2.4.1/lodash.compat.js"></script>-->
+    <script type="text/javascript" src="../lib/jquery-2.1.1/jquery-2.1.1.js"></script>
+    <script src="../lib/bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="../lib/bootstrap-3.2.0-dist/css/bootstrap.min.css"/>
+
+    <script type="text/javascript" src="src/compareNumber.js"></script>
+    <script type="text/javascript" src="src/game.js"></script>
+    <script type="text/javascript" src="src/generateRand.js"></script>
+    <script type="text/javascript" src="src/guess.js"></script>
+    <script type="text/javascript" src="src/main.js"></script>
+
+
+</head>
+
+<body>
+<div class="container">
+    <!--<form role="form" class="form-control">-->
+            <h4 id="welcome">Welcome to you ,please input your number(<span class="chance">6</span>):</h4>
+            <div class="row">
+                <div class="col-md-4">
+                    <input type="text" class="form-control" id="contentInput" placeholder="input number">
+                </div>
+                <div class="col-md-2">
+                    <span id="invalidNumber" class="text-danger">invalid number</span>
+                 </div>
+                <div class="col-md-2">
+                    <span id="tips"></span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-2"> <button class="btn btn-danger" id ="start">Start!</button></div>
+                <div class="col-md-2"> <button class="btn btn-primary" id="commit">Commit!</button></div>
+            </div>
+
+    <!--</form>-->
+
+</div>
+</body>
+</html>

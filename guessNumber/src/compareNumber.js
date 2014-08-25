@@ -37,4 +37,4 @@ CompareNumber.prototype.compare = function (answer, inputs) {
 
     compareB = compareSame - compareA;
     return compareA + 'A' + compareB + 'B';
-}
+};
